@@ -8,7 +8,7 @@ function App() {
   const [to, setTo] = useState("inr");
   const [convertedAmount, setConvertedAmount] = useState(0);
 
-  const currrencyInfo = useCurrencyInfo(from); // this hook is giving me data for the cureency from api
+  const currrencyInfo = useCurrencyInfo(from); // this hook is giving me data for the chosen cureency from api 1usd = how many of the currency given below
 
   const options = Object.keys(currrencyInfo);
 

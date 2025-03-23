@@ -9,6 +9,7 @@ function useCurrencyInfo(currency) {
       .then((res) => res.json()) // convert the data to json
       .then((res) => setData(res[currency])); //The second then updates the data state with the currency data from the response.
     console.log(data);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currency]);
   console.log(data);
   return data;
